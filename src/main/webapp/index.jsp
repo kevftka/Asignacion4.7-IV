@@ -2,16 +2,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Asignacion 4.7- Kevin Castillo</title>
+    <title>Tablas de Multiplicar del 1 al 10</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body>
-    <h1><%= "Tablas de Multiplicar del 1 al 10" %>
-    </h1>
-    <br/>
-        <button href="hello-servlet">
-            <h3>Generar tablas de multiplicar</h3>
-
-        </button>
-
+Introduzca un numero para mostrar su tabla de multiplicar:
+<FORM action=tabla.jsp>
+    <INPUT type=text NAME=num /><br/>
+    <INPUT type=submit value="Aceptar"/>
+</FORM>
 </body>
 </html>

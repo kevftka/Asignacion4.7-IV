@@ -1,19 +1,15 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="estilo.css">
 <head>
-    <title>Asignacion 4.7- Kevin Castillo</title>
+    <title>Tablas de Multiplicar del 1 al 10</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body>
-<fieldset>
-    <h1><%= "Tablas de Multiplicar del 1 al 10" %>
-    </h1>
-    <br/>
-    <fieldset>
-        <a href="hello-servlet"> </a>
-    </fieldset>
-
-</fieldset>
+Introduzca un numero para mostrar su tabla de multiplicar:
+<FORM action=tabla.jsp>
+    <INPUT type=text NAME=num /><br/>
+    <INPUT type=submit value="Aceptar"/>
+</FORM>
 </body>
 </html>
