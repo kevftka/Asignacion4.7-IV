@@ -9,27 +9,28 @@
 <!DOCTYPE html>
 <HTML>
 <HEAD><TITLE>Tabla de multiplicar</TITLE></HEAD>
-<%!
-  void tabla(JspWriter out, int numero) {
-    try {
-      out.print("<table border=1><tr><td>Tabla de multiplicar del " + numero + "</td></tr>");
-      for (int i = 1; i <= 10; i++) {
-        out.print("<tr><td>"+numero + " x " + i + " = " + numero * i + "</td></tr>");
-      }
-    } catch (Exception ioe) {
-      ioe.printStackTrace();
-    }
-  }
-%>
+
 <BODY>
-<%
-  String numS = request.getParameter("num");
-  if (numS != null) {
-    int num2 = Integer.parseInt(numS);
-    tabla(out, num2);
-  } else {
-    out.print("El numero es un null");
-  }
-%>
+
+<table >
+  <%!
+    public static void main(String[] args){
+
+      for(int i = 1; i<=10; i++){
+        out.println("----TABLA DEL " + i + "-----");
+
+        for(int j = 0; j<=10; j++){
+          out.println(i + "*" + j + "=" +(i *j));
+
+        }
+        out.println("---------------");
+      }
+    }
+  %>
+
+</table>
+<a href=index.html> Retornar</a>
+
+
 </BODY>
 </HTML>
